@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>io.qoop</groupId>
+        <artifactId>integration</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>sms-integration</artifactId>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>sms-integration-infrastructure</module>
+        <module>sms-integration-presentation</module>
+        <module>sms-integration-application</module>
+        <module>sms-integration-container</module>
+    </modules>
+
+    <properties>
+        <sms-integration-application.version>0.0.1-SNAPSHOT</sms-integration-application.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>io.qoop</groupId>
+                <artifactId>sms-integration-application</artifactId>
+                <version>${sms-integration-application.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>
