@@ -1,7 +1,7 @@
 package ir.online.integration.sms.presentation.rest;
 
 import ir.online.integration.sms.application.port.in.usecase.SmsUseCase;
-import ir.online.integration.sms.presentation.rest.dto.req.SendOtpReauest;
+import ir.online.integration.sms.presentation.rest.dto.req.SendOtpRequest;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -23,7 +23,7 @@ public class SmsResource {
     private final SmsUseCase smsUseCase;
 
     @PostMapping("/otp/send")
-    public void SendOtp(@RequestBody SendOtpReauest sendOtpReauest) {
-        smsUseCase.SendOtp(sendOtpReauest.getRecipients(), sendOtpReauest.getCode());
+    public void SendOtp(@RequestBody SendOtpRequest sendOtpRequest) {
+        smsUseCase.sendOtp(sendOtpRequest.getRecipients(), sendOtpRequest.getCode());
     }
 }

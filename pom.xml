@@ -17,18 +17,21 @@
         <module>sms-integration-presentation</module>
         <module>sms-integration-application</module>
         <module>sms-integration-container</module>
+        <module>sms-integration-shared</module>
     </modules>
-
-    <properties>
-        <sms-integration-application.version>0.0.1-SNAPSHOT</sms-integration-application.version>
-    </properties>
 
     <dependencyManagement>
         <dependencies>
             <dependency>
                 <groupId>io.qoop</groupId>
                 <artifactId>sms-integration-application</artifactId>
-                <version>${sms-integration-application.version}</version>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.qoop</groupId>
+                <artifactId>sms-integration-shared-api</artifactId>
+                <version>${project.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

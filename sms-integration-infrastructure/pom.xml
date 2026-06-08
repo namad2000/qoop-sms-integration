@@ -13,11 +13,6 @@
     <artifactId>sms-integration-infrastructure</artifactId>
 
     <dependencies>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-openfeign</artifactId>
-        </dependency>
-
         <!-- Jackson for JSON parsing -->
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
@@ -26,12 +21,17 @@
 
         <dependency>
             <groupId>io.qoop</groupId>
-            <artifactId>shared-sms-application</artifactId>
+            <artifactId>qoop-feign</artifactId>
         </dependency>
 
         <dependency>
             <groupId>io.qoop</groupId>
             <artifactId>sms-integration-application</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>io.qoop</groupId>
+            <artifactId>sms-integration-shared-api</artifactId>
         </dependency>
     </dependencies>
 </project>

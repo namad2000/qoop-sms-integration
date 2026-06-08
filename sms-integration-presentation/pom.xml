@@ -20,6 +20,11 @@
 
         <dependency>
             <groupId>io.qoop</groupId>
+            <artifactId>qoop-mapper-core</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>io.qoop</groupId>
             <artifactId>sms-integration-application</artifactId>
         </dependency>
     </dependencies>

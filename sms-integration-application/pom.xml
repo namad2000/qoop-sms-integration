@@ -29,7 +29,7 @@
 
         <dependency>
             <groupId>io.qoop</groupId>
-            <artifactId>shared-sms-application</artifactId>
+            <artifactId>sms-integration-shared-api</artifactId>
         </dependency>
     </dependencies>
 </project>

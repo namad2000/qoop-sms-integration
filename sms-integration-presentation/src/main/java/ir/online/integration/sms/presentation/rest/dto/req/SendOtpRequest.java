@@ -10,7 +10,7 @@ import lombok.Data;
  */
 
 @Data
-public class SendOtpReauest {
+public class SendOtpRequest {
     private String recipients;
     private String Code;
 }

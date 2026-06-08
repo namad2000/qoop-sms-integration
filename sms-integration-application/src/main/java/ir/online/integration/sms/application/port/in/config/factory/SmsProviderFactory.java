@@ -1,6 +1,7 @@
 package ir.online.integration.sms.application.port.in.config.factory;
 
-import ir.online.shared.sms.application.port.out.SmsPort;
+
+import ir.online.integration.sms.shared.api.port.out.SmsPort;
 
 /**
  * Author: davood akbari

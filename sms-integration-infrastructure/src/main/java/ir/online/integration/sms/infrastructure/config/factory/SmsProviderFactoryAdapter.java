@@ -2,7 +2,7 @@ package ir.online.integration.sms.infrastructure.config.factory;
 
 import io.qoop.fault.handler.api.exception.DomainException;
 import ir.online.integration.sms.application.port.in.config.factory.SmsProviderFactory;
-import ir.online.shared.sms.application.port.out.SmsPort;
+import ir.online.integration.sms.shared.api.port.out.SmsPort;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
@@ -22,6 +22,7 @@ public class SmsProviderFactoryAdapter implements SmsProviderFactory {
 
     @Value("${sms.provider}")
     private String smsProvider;
+
     private final Map<String, SmsPort> smsProviderMap;
 
     @Override

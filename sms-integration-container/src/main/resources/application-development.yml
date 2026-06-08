@@ -1,5 +1,10 @@
 sms:
-  provider: ${SMS_PROVIDER:FARAZ_SMS}
-  baseUrl: ${SMS_BASE_URL:https://edge.ippanel.com/v1/api}
+  provider: ${SMS_PROVIDER:SMS_IR}
+  baseUrl: ${SMS_BASE_URL:https://api.sms.ir/v1/send}
   fromNumber: ${SMS_FROM_NUMBER:+983000505'}
-  token: ${SMS_TOKEN:YTBkN2I5ZTEtNTNhMC00MDgzLTg5OTAtNWI5YzMzYjQ4ODkxMzBhMjE0MmE0ODllYTI3MDEwNzVmNmFhZWRhZDA4M2Y=}
+  token: ${SMS_TOKEN:VZIDZLLeduTkDjRFQKoHGDgf8AiypvvLoyZqgJM2jORNx2Lw}
+  otpTemplateId: 123456
+  otpParamName: Code
+
+scan:
+  packages: ir.online
