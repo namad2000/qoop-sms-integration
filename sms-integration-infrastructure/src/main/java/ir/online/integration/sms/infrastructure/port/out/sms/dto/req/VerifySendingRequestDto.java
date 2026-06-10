@@ -14,5 +14,5 @@ import java.util.List;
 public class VerifySendingRequestDto {
     private String mobile;
     private String templateId;
-    private List<ParameterDto> parameterDtos;
+    private List<ParameterDto> parameters;
 }

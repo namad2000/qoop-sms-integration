@@ -32,7 +32,7 @@ public class SmsBuilder {
         return VerifySendingRequestDto.builder()
                 .mobile(recipients)
                 .templateId(templateId)
-                .parameterDtos(Collections.singletonList(parameter))
+                .parameters(Collections.singletonList(parameter))
                 .build();
     }
 }

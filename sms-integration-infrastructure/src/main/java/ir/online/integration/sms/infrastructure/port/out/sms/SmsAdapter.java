@@ -19,15 +19,15 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 public class SmsAdapter implements SmsPort {
 
-    @Value("${sms.token})")
+    @Value("${sms.token}")
     private String token;
 
     private final SmsIrClient smsIrClient;
     private final SmsBuilder smsBuilder;
 
     @Override
-    public void sendOtp(String recipients, String Code) {
-        VerifySendingRequestDto verifySendingRequest = smsBuilder.buildVerifySendingRequestDto(recipients, Code);
+    public void sendOtp(String recipients, String code) {
+        VerifySendingRequestDto verifySendingRequest = smsBuilder.buildVerifySendingRequestDto(recipients, code);
         smsIrClient.sendVerify(verifySendingRequest, token);
     }
 }

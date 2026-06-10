@@ -12,5 +12,5 @@ import lombok.Data;
 @Data
 public class SendOtpRequest {
     private String recipients;
-    private String Code;
+    private String code;
 }
