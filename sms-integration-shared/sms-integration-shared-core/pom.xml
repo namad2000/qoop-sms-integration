@@ -10,4 +10,21 @@
     </parent>
 
     <artifactId>sms-integration-shared-core</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>io.qoop</groupId>
+            <artifactId>sms-integration-shared-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>io.qoop</groupId>
+            <artifactId>qoop-mapper-core</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>io.qoop</groupId>
+            <artifactId>qoop-feign</artifactId>
+        </dependency>
+    </dependencies>
 </project>

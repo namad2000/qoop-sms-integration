@@ -16,4 +16,14 @@
         <module>sms-integration-shared-api</module>
         <module>sms-integration-shared-core</module>
     </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>io.qoop</groupId>
+                <artifactId>sms-integration-shared-api</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 </project>

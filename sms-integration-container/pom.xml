@@ -11,8 +11,10 @@
     </parent>
 
     <artifactId>sms-integration-container</artifactId>
+
     <properties>
         <sms-integration.version>0.0.1-SNAPSHOT</sms-integration.version>
+        <sms-integration-shared-core.version>0.0.1-SNAPSHOT</sms-integration-shared-core.version>
     </properties>
 
     <dependencies>
@@ -26,6 +28,14 @@
             <groupId>io.qoop</groupId>
             <artifactId>sms-integration-presentation</artifactId>
             <version>${sms-integration.version}</version>
+        </dependency>
+
+        <!--        Test        -->
+        <dependency>
+            <groupId>io.qoop</groupId>
+            <artifactId>sms-integration-shared-core</artifactId>
+            <version>${sms-integration-shared-core.version}</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 </project>

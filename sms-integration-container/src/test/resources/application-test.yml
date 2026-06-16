@@ -1,0 +1,10 @@
+sms:
+  provider: ${SMS_PROVIDER:SMS_IR}
+  baseUrl: ${SMS_BASE_URL:https://api.sms.ir/v1/send}
+  fromNumber: ${SMS_FROM_NUMBER:+983000505'}
+  token: ${SMS_TOKEN:VZIDZLLeduTkDjRFQKoHGDgf8AiypvvLoyZqgJM2jORNx2Lw}
+  otpTemplateId: 123456
+  otpParamName: Code
+
+scan:
+  packages: ir.online

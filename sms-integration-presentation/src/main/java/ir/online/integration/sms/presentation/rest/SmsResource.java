@@ -1,7 +1,7 @@
 package ir.online.integration.sms.presentation.rest;
 
 import ir.online.integration.sms.application.port.in.usecase.SmsUseCase;
-import ir.online.integration.sms.presentation.rest.dto.req.SendOtpRequest;
+import ir.online.integration.sms.shared.api.port.out.dto.SendOtpRequest;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
